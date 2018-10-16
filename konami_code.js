@@ -39,18 +39,18 @@ function keydownHandler(event) {
 function keydownHandlerEVENBetter(event) {
     const key = parseInt(event.which);
     
-    const enteredKeyRight = key === code[index]
-    const reachedTheEnd = index === code.length;
+    const enteredKeyRight = checkKey(key)
+    const reachedTheEnd = checkForEnd(index)
     
     if(enteredKeyRight) {
-      index++;
+      addOneToIndex()
       
       if(reachedTheEnd) {
-        alert("Hurray!");
-        index = 0;
+        giveCongratulatoryMessage()
+        resetCodeToStart()
       }
     } else {
-      index = 0;
+      resetCodeToStart()
     }
     
     if(enteredKeyRight && reachedTheEnd) {
@@ -71,6 +71,10 @@ function init() {
   document.addEventListener('keydown', keydownHandler)
 }
 
+
+const checkKey = key => key === code[index]
+
+const checkForEnd = index => index === code.length
 
 init()
 
@@ -117,3 +121,18 @@ init()
 // }
 
 // init()
+
+
+if (imHungry) {
+  eatFood()
+} else {
+  dontEat()
+}
+
+if (imHungry) {
+  eatFood()
+} else if(imTired) {
+  goToSleep()
+} else if(imDirty) {
+  takeAShower()
+}
