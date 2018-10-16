@@ -7,8 +7,18 @@ function init() {
 }
 
 function keydownHandler(event) {
-  const key = parseInt(event.which);
-  
+  let key = parseInt(event.which);
+  if (key === code[index]) {
+    index++;
+
+    if (index === alphabet.length) {
+      alert("Hurray!");
+
+      index = 0;
+    }
+  } else {
+    index = 0;
+  }
 }
 
 init()
