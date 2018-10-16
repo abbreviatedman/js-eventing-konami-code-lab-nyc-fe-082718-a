@@ -7,7 +7,7 @@ function init() {
 }
 
 function keydownHandler(event) {
-  console.log(event.which);
+  const key = parseInt(event.which)
 }
 
 init()
