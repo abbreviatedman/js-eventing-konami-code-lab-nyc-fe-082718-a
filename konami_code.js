@@ -46,22 +46,25 @@ function keydownHandlerEVENBetter(event) {
       index++;
       
       if(reachedTheEnd) {
-        
+        alert("Hurray!");
+        index = 0;
       }
+    } else {
+      index = 0;
     }
     
-    // if(enteredKeyRight && reachedTheEnd) {
-    //   alert("Hurray!");
-    //   index = 0;
-    // }
+    if(enteredKeyRight && reachedTheEnd) {
+      alert("Hurray!");
+      index = 0;
+    }
     
-    // if(enteredKeyRight && !reachedTheEnd) {
-    //   index++
-    // }
+    if(enteredKeyRight && !reachedTheEnd) {
+      index++
+    }
     
-    // if (!enteredKeyRight) {
-    //   index = 0;
-    // }
+    if (!enteredKeyRight) {
+      index = 0;
+    }
 }
 
 function init() {
