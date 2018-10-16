@@ -135,4 +135,7 @@ if (imHungry) {
   goToSleep()
 } else if(imDirty) {
   takeAShower()
+} else {
+  playVideoGames()
 }
+
