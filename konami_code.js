@@ -36,6 +36,26 @@ function keydownHandler(event) {
     
 // }
 
+function keydownHandlerEVENBetter(event) {
+    const key = parseInt(event.which);
+    
+    const enteredKeyRight = key === code[index]
+    const reachedTheEnd = index === code.length - 1;
+    
+    if(enteredKeyRight && reachedTheEnd) {
+      alert("Hurray!");
+      index = 0;
+    }
+    
+    if(enteredKeyRight && !reachedTheEnd) {
+      index++
+    }
+    
+    if (!enteredKeyRight) {
+      index = 0;
+    }
+}
+
 function init() {
   document.addEventListener('keydown', keydownHandler)
 }
