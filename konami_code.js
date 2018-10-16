@@ -6,8 +6,8 @@ function init() {
   document.body.addEventListener('keydown', keydownHandler)
 }
 
-function keydownHandler() {
-  
+function keydownHandler(event) {
+  console.log(event);
 }
 
 init()
