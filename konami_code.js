@@ -16,6 +16,7 @@ function keydownHandler(event) {
     index = 0;
   }
 }
+
 function init() {
   document.addEventListener('keydown', keydownHandler)
 }
