@@ -42,18 +42,18 @@ function keydownHandlerEVENBetter(event) {
     const enteredKeyRight = key === code[index]
     const reachedTheEnd = index === code.length - 1;
     
-    if(enteredKeyRight && reachedTheEnd) {
-      alert("Hurray!");
-      index = 0;
-    }
+    // if(enteredKeyRight && reachedTheEnd) {
+    //   alert("Hurray!");
+    //   index = 0;
+    // }
     
-    if(enteredKeyRight && !reachedTheEnd) {
-      index++
-    }
+    // if(enteredKeyRight && !reachedTheEnd) {
+    //   index++
+    // }
     
-    if (!enteredKeyRight) {
-      index = 0;
-    }
+    // if (!enteredKeyRight) {
+    //   index = 0;
+    // }
 }
 
 function init() {
