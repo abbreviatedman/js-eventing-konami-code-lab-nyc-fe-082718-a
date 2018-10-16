@@ -18,23 +18,23 @@ function keydownHandler(event) {
 }
 
 
-function keydownHandlerBetter(event) {
-    const key = parseInt(event.which);
+// function keydownHandlerBetter(event) {
+//     const key = parseInt(event.which);
     
-    if (key === code[index] && index === code.length - 1) {
-      alert("Hurray!")
-      index = 0;
-    } 
+//     if (key === code[index] && index === code.length - 1) {
+//       alert("Hurray!")
+//       index = 0;
+//     } 
     
-    if (key === code[index] && index < code.length - 1) {
-      index++;
-    }
+//     if (key === code[index] && index < code.length - 1) {
+//       index++;
+//     }
     
-    if (key !== code[index]) {
-      index = 0;
-    }
+//     if (key !== code[index]) {
+//       index = 0;
+//     }
     
-}
+// }
 
 function init() {
   document.addEventListener('keydown', keydownHandler)
