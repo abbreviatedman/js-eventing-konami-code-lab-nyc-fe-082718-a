@@ -129,9 +129,9 @@ if (imHungry) {
   dontEat()
 }
 
-if (imHungry) {
+if (imTired) {
   eatFood()
-} else if(imTired) {
+} else if(imHungry) {
   goToSleep()
 } else if(imDirty) {
   takeAShower()
