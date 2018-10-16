@@ -40,7 +40,15 @@ function keydownHandlerEVENBetter(event) {
     const key = parseInt(event.which);
     
     const enteredKeyRight = key === code[index]
-    const reachedTheEnd = index === code.length - 1;
+    const reachedTheEnd = index === code.length;
+    
+    if(enteredKeyRight) {
+      index++;
+      
+      if(reachedTheEnd) {
+        
+      }
+    }
     
     // if(enteredKeyRight && reachedTheEnd) {
     //   alert("Hurray!");
